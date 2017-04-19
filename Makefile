@@ -12,7 +12,7 @@
 ### Code:
 
 
-all: shellcode vuln disable_aslr
+all: vuln disable_aslr
 
 shellcode:
 	./compile_shellcode.sh shellcode > shellcode.hex

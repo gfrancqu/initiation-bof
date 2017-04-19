@@ -20,6 +20,11 @@ void vuln(){
   printf("variable buffer(%p) : %s\n",&buffer,buffer);
 }
 
+/* cette fonction n'est jamais appellée , pourtant il est possible de l'appeler ! */
+void jamaisAppellee(){
+  printf("je ne devrais pas etre appele !!!!!");
+  fflush(stdout);
+}
 
 int main(){
   vuln();
